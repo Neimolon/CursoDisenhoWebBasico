@@ -29,6 +29,10 @@ class Usuario {
 		return $this->email;
 	}
 	
+	public function obtener_password(){
+		return $this->password;
+	}
+	
 	public function obtener_fecha_registro(){
 		return $this->fecha_registro;
 	}

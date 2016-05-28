@@ -14,24 +14,24 @@ Conexion::cerrar_conexion ();
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"> Blog de curso de desarrollo</a>
+			<a class="navbar-brand" href="<?php echo RUTA_SERVIDOR ?>"> Blog de curso de desarrollo</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="#"><span class="glyphicon glyphicon-th-list"
+				<li><a href="<?php echo RUTA_ENTRADAS ?>"><span class="glyphicon glyphicon-th-list"
 						aria-hidden="true"></span> Entrada</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-star"
+				<li><a href="<?php echo RUTA_FAVORITOS ?>"><span class="glyphicon glyphicon-star"
 						aria-hidden="true"></span> Favoritos</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-education"
-						aria-hidden="true"></span> Auores</a></li>
+				<li><a href="<?php echo RUTA_AUTORES ?>"><span class="glyphicon glyphicon-education"
+						aria-hidden="true"></span> Autores</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#"><span class="glyphicon glyphicon-user"
 						aria-hidden="true"></span> <?php echo $total_usuarios ?> </a></li>
 
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"
+				<li><a href="<?php echo RUTA_LOGIN ?>"><span class="glyphicon glyphicon-log-in"
 						aria-hidden="true"></span> Iniciar Sesion</a></li>
-				<li><a href="registro.php"><span class="glyphicon glyphicon-plus"
+				<li><a href="<?php echo RUTA_REGISTRO ?>"><span class="glyphicon glyphicon-plus"
 						aria-hidden="true"></span> Registro</a></li>
 			</ul>
 		</div>

@@ -1,6 +1,11 @@
 <?php 
-/*No se me empalmen, el usuario tiene acceso restringido desde fuera*/
-$nombre_servidor = "localhost";
-$nombre_usuario = "jd1_practicas";
-$password = "abc123..";
-$nombre_base_datos = "jd1_disenoweb";
+
+define("NOMBRE_SERVIDOR","localhost");
+define("NOMBRE_USUARIO","jd1_practicas");
+define("PASSWORD","abc123..");
+define("NOMBRE_DB","jd1_disenoweb");
+
+define("SERVIDOR","http://localhost/blog-CursoDesarolloWeb-JD1");
+define("RUTA_REGISTRO",SERVIDOR."/registro.php");
+define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/registro-correcto.php");
+define("RUTA_LOGIN",SERVIDOR."/login.php");
