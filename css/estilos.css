@@ -37,3 +37,10 @@ body{
 #navbar li a:hover,#navbar li a:active{
 	color:deepskyblue !important;	
 }
+
+.dropdown-menu{
+	background-color: #2B2B2B;
+}
+.open > a{
+	background-color: #2B2B2B !important;
+}

@@ -9,3 +9,4 @@ define("SERVIDOR","http://localhost/blog-CursoDesarolloWeb-JD1");
 define("RUTA_REGISTRO",SERVIDOR."/registro.php");
 define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/registro-correcto.php");
 define("RUTA_LOGIN",SERVIDOR."/login.php");
+define("RUTA_LOGOUT",SERVIDOR."/logout.php");
