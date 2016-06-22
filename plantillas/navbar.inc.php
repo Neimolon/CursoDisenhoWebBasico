@@ -2,9 +2,8 @@
 include_once 'app/ControlSesion.inc.php';
 include_once 'app/config.inc.php';
 
-Conexion::abrir_conexion ();
+Conexion::abrir_conexion();
 $total_usuarios = RepositorioUsuario::obtener_numero_usuarios ( Conexion::obtener_conexion () );
-Conexion::cerrar_conexion ();
 ?>
 
 <nav class="navbar navbar-default navbar-static-top">
