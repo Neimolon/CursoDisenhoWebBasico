@@ -44,3 +44,19 @@ body{
 .open > a{
 	background-color: #2B2B2B !important;
 }
+
+.btn-primary{
+	background-color: deepskyblue !important;
+	border: none;
+}
+
+.btn-primary:hover{
+	background-color: #2B2B2B !important;
+}
+
+.contenido-articulo{
+	background-color: white;
+	padding: 2em;
+	
+}
+

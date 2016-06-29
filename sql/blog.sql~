@@ -28,7 +28,7 @@ CREATE TABLE entradas(
 		ON DELETE RESTRICT 
 );
 
-CREATE TABLE comentario(
+CREATE TABLE comentarios(
 	id INT NOT NULL UNIQUE AUTO_INCREMENT,
 	autor_id INT NOT NULL,
 	entrada_id INT NOT NULL,

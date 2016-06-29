@@ -21,7 +21,7 @@ if(isset($_POST["enviar"])){
 		
 		
 		if($usuario_insertado){
-			Redireccion::redirigir(RUTA_REGISTRO_CORRECTO.'?nombre='.$usuario->obtener_nombre());
+			Redireccion::redirigir(RUTA_REGISTRO_CORRECTO.'/'.$usuario->obtener_nombre());
 		}
 	}
 	
@@ -67,7 +67,7 @@ $titulo = "Registro";
 					<h3 class="panel-title">Introduce tus datos</h3>
 				</div>
 				<div class="panel-body">
-					<form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']?>" >
+					<form role="form" method="post" action="<?php echo RUTA_REGISTRO ?>" >
 					<?php
 					if(isset($_POST["enviar"])){
 						include_once 'plantillas/registro_validado.inc.php';

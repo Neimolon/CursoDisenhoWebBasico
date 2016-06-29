@@ -35,7 +35,7 @@ class EscritorEntradas{
 						</div>
 						<br>
 						<div class="text-center">
-							<a href="" class="btn btn-primary" role="button">Seguir leyendo</a>
+							<a href="<?php echo RUTA_ENTRADA."/".$entrada->obtener_url(); ?>" class="btn btn-primary" role="button">Seguir leyendo</a>
 						
 						</div>
 					</div>

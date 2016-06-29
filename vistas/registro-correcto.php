@@ -4,12 +4,6 @@ include_once 'app/Conexion.inc.php';
 include_once 'app/RepositorioUsuario.inc.php';
 include_once 'app/Redireccion.inc.php';
 
-if (! empty ( $_GET ['nombre'] )) {
-	$nombre = $_GET ['nombre'];
-} else {
-	Redireccion::redirigir ( SERVIDOR );
-}
-
 $titulo = "Registro correcto";
 
 ?>

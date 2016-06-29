@@ -27,8 +27,8 @@ for($entradas = 0; $entradas < 100; $entradas++){
 	$titulo = sa(10);
 	$texto = lorem();
 	$autor_id = rand(1,100);
-	
-	$entrada = new Entrada('',$autor_id,$titulo,$texto,'','');
+	$url = $titulo;
+	$entrada = new Entrada('',$autor_id,$url,$titulo,$texto,'','');
 	
 	RepositorioEntrada::insertar_entrada(Conexion::obtener_conexion(),$entrada);
 }

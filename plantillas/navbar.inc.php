@@ -16,7 +16,7 @@ $total_usuarios = RepositorioUsuario::obtener_numero_usuarios ( Conexion::obtene
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo RUTA_SERVIDOR ?>"> Blog de
+			<a class="navbar-brand" href="<?php echo SERVIDOR ?>"> Blog de
 				curso de desarrollo</a>
 		</div>
 

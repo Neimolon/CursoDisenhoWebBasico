@@ -7,10 +7,11 @@ define("NOMBRE_DB","jd1_disenoweb");
 
 //rutas de la web
 define("SERVIDOR","http://localhost/blog-CursoDesarolloWeb-JD1");
-define("RUTA_REGISTRO",SERVIDOR."/registro.php");
-define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/registro-correcto.php");
-define("RUTA_LOGIN",SERVIDOR."/login.php");
-define("RUTA_LOGOUT",SERVIDOR."/logout.php");
+define("RUTA_REGISTRO",SERVIDOR."/registro");
+define("RUTA_REGISTRO_CORRECTO",SERVIDOR."/registro-correcto");
+define("RUTA_LOGIN",SERVIDOR."/login");
+define("RUTA_LOGOUT",SERVIDOR."/logout");
+define("RUTA_ENTRADA",SERVIDOR."/entrada");
 
 //recursos
 
