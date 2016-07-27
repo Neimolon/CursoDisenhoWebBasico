@@ -60,3 +60,10 @@ body{
 	
 }
 
+.sidebar{
+    background-color: white;
+    margin-top: -5em;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+

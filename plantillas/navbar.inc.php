@@ -19,8 +19,10 @@ $total_usuarios = RepositorioUsuario::obtener_numero_usuarios(Conexion::obtener_
             <a class="navbar-brand" href="<?php echo SERVIDOR ?>"> Blog de
                 curso de desarrollo</a>
         </div>
-
         <div id="navbar" class="navbar-collapse collapse">
+            <?php
+                if(!ControlSesion::sesion_iniciada()){
+            ?>
             <ul class="nav navbar-nav">
                 <li>
                     <a href="<?php echo RUTA_ENTRADAS ?>">
@@ -41,6 +43,10 @@ $total_usuarios = RepositorioUsuario::obtener_numero_usuarios(Conexion::obtener_
                     </a>
                 </li>
             </ul>
+
+            <?php
+                }
+            ?>
             <ul class="nav navbar-nav navbar-right">
                 <?php
                 if (ControlSesion::sesion_iniciada()) {
@@ -52,11 +58,11 @@ $total_usuarios = RepositorioUsuario::obtener_numero_usuarios(Conexion::obtener_
                             <?php echo ' ' . $_SESSION["nombre_usuario"] ?>
                         </a>
                     </li>
-                                        
+
                     <li>
                         <a href="<?php echo RUTA_GESTOR ?>">
                             <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
-                            <?php echo ' ' . $_SESSION["nombre_usuario"] ?>
+                            Gestor
                         </a>
                     </li>
 

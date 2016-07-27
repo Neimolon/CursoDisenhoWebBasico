@@ -39,6 +39,8 @@ if ($partes_ruta[0] == "blog-CursoDesarolloWeb-JD1") {
 
             case 'gestor':
                 $ruta_elegida = "vistas/gestor.php";
+                $gestor_actual = "";
+                
                 break;
             case 'relleno-dev':
                 $ruta_elegida = "vistas/script-relleno.php";
@@ -60,6 +62,22 @@ if ($partes_ruta[0] == "blog-CursoDesarolloWeb-JD1") {
                 $ruta_elegida = "vistas/entrada.php";
                 $entradas_al_azar = RepositorioEntrada::obtener_entradas_al_azar(Conexion::obtener_conexion(), 3);
             }
+        }
+    }
+    if($partes_ruta[1] = "gestor"){
+        switch($partes_ruta[2]){
+            case "entradas" :
+                $gestor_actual = "entradas";
+                $ruta_elegida = "vistas/gestor.php";
+                break;
+            case "comentarios" :
+                $gestor_actual = "comentarios";
+                $ruta_elegida = "vistas/gestor.php";
+                break;
+            case "favoritos" :
+                $gestor_actual = "favoritos";
+                $ruta_elegida = "vistas/gestor.php";
+                break;
         }
     }
 }
